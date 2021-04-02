@@ -12,6 +12,8 @@ public class GameOfLifeTest {
         for (int i = 0; i < sizeGrid; i++) {
             for (int j = 0; j < sizeGrid; j++) {
                 c[i][j] = repMap[i][j] == 'X' ? new Cell(true) : new Cell(false);
+                System.out.print(c[i][j]);
+
             }
         }
 
@@ -246,5 +248,6 @@ public class GameOfLifeTest {
                          ". . X . . .\n" +
                          ". . . . . .", g.toString());
     }
+
 
 }
